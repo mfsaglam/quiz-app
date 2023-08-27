@@ -11,9 +11,11 @@
 		12F1242B2A9B77670074C2E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F1242A2A9B77670074C2E3 /* SceneDelegate.swift */; };
 		12F124322A9B77670074C2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F124312A9B77670074C2E3 /* Assets.xcassets */; };
 		12F124352A9B77670074C2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F124332A9B77670074C2E3 /* LaunchScreen.storyboard */; };
-		12F124402A9B77670074C2E3 /* QuizAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F1243F2A9B77670074C2E3 /* QuizAppTests.swift */; };
 		12F1244A2A9B77670074C2E3 /* QuizAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F124492A9B77670074C2E3 /* QuizAppUITests.swift */; };
 		12F1244C2A9B77670074C2E3 /* QuizAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F1244B2A9B77670074C2E3 /* QuizAppUITestsLaunchTests.swift */; };
+		12F124592A9B79100074C2E3 /* QuestionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F124582A9B79100074C2E3 /* QuestionViewControllerTests.swift */; };
+		12F1245B2A9B79F30074C2E3 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F1245A2A9B79F30074C2E3 /* QuestionViewController.swift */; };
+		12F1245D2A9B7A9E0074C2E3 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F1245C2A9B7A9E0074C2E3 /* QuestionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +43,12 @@
 		12F124342A9B77670074C2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12F124362A9B77670074C2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12F1243B2A9B77670074C2E3 /* QuizAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		12F1243F2A9B77670074C2E3 /* QuizAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppTests.swift; sourceTree = "<group>"; };
 		12F124452A9B77670074C2E3 /* QuizAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F124492A9B77670074C2E3 /* QuizAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppUITests.swift; sourceTree = "<group>"; };
 		12F1244B2A9B77670074C2E3 /* QuizAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		12F124582A9B79100074C2E3 /* QuestionViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewControllerTests.swift; sourceTree = "<group>"; };
+		12F1245A2A9B79F30074C2E3 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		12F1245C2A9B7A9E0074C2E3 /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				12F124312A9B77670074C2E3 /* Assets.xcassets */,
 				12F124332A9B77670074C2E3 /* LaunchScreen.storyboard */,
 				12F124362A9B77670074C2E3 /* Info.plist */,
+				12F1245A2A9B79F30074C2E3 /* QuestionViewController.swift */,
+				12F1245C2A9B7A9E0074C2E3 /* QuestionViewController.xib */,
 			);
 			path = QuizApp;
 			sourceTree = "<group>";
@@ -107,7 +113,7 @@
 		12F1243E2A9B77670074C2E3 /* QuizAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				12F1243F2A9B77670074C2E3 /* QuizAppTests.swift */,
+				12F124582A9B79100074C2E3 /* QuestionViewControllerTests.swift */,
 			);
 			path = QuizAppTests;
 			sourceTree = "<group>";
@@ -192,6 +198,7 @@
 					};
 					12F1243A2A9B77670074C2E3 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 						TestTargetID = 12F124242A9B77670074C2E3;
 					};
 					12F124442A9B77670074C2E3 = {
@@ -227,6 +234,7 @@
 			files = (
 				12F124352A9B77670074C2E3 /* LaunchScreen.storyboard in Resources */,
 				12F124322A9B77670074C2E3 /* Assets.xcassets in Resources */,
+				12F1245D2A9B7A9E0074C2E3 /* QuestionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +261,7 @@
 			files = (
 				12F124292A9B77670074C2E3 /* AppDelegate.swift in Sources */,
 				12F1242B2A9B77670074C2E3 /* SceneDelegate.swift in Sources */,
+				12F1245B2A9B79F30074C2E3 /* QuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12F124402A9B77670074C2E3 /* QuizAppTests.swift in Sources */,
+				12F124592A9B79100074C2E3 /* QuestionViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +484,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RPQ3VF2JBZ;
@@ -484,6 +494,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mfsaglam.QuizAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuizApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QuizApp";
@@ -495,6 +506,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RPQ3VF2JBZ;
