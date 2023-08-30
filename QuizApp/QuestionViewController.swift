@@ -26,6 +26,7 @@ class QuestionViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         headerLabel.text = question
     }
     

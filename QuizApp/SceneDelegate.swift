@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         _ = viewController.view
 //        viewController.tableView.allowsMultipleSelection = true
         window?.rootViewController = viewController
-        
+
         window?.makeKeyAndVisible()
     }
 
