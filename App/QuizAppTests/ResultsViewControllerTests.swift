@@ -25,7 +25,6 @@ class ResultsViewControllerTests: XCTestCase {
     
     func test_viewDidLoad_withCorrectAnswer_rendersCorrectAnswerCell() {
         let sut = makeSUT(answers: [PresentableAnswer(isCorrect: true)])
-        let indexPath = IndexPath(row: 0, section: 0)
         let cell = sut.tableView.cell(at: 0) as? CorrectAnswerCell
 
         XCTAssertNotNil(cell)
@@ -33,7 +32,6 @@ class ResultsViewControllerTests: XCTestCase {
     
     func test_viewDidLoad_withWrongAnswer_rendersWrongAnswerCell() {
         let sut = makeSUT(answers: [PresentableAnswer(isCorrect: false)])
-        let indexPath = IndexPath(row: 0, section: 0)
         let cell = sut.tableView.cell(at: 0) as? WrongAnswerCell
 
         XCTAssertNotNil(cell)
