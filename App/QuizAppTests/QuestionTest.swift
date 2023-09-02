@@ -33,5 +33,7 @@ class QuestionTest: XCTestCase {
     func test_equal_isNotEqual() {
         XCTAssertNotEqual(Question.singleAnswer("a string"), Question.singleAnswer("another string"))
         XCTAssertNotEqual(Question.multipleAnswer("a string"), Question.multipleAnswer("another string"))
+        XCTAssertNotEqual(Question.singleAnswer("a string"), Question.multipleAnswer("another string"))
+        XCTAssertNotEqual(Question.singleAnswer("a string"), Question.multipleAnswer("a string"))
     }
 }

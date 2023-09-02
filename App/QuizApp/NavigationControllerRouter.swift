@@ -33,8 +33,6 @@ enum Question<T: Hashable>: Hashable {
     }
 }
 
-let question = Question.singleAnswer("a question")
-
 protocol ViewControllerFactory {
     func questionViewController(for question: String, answerCallback: @escaping (String) -> Void) -> UIViewController
 }
