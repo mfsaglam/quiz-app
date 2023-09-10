@@ -26,7 +26,15 @@ class QuestionViewControllerTests: XCTestCase {
 
     }
     
-    func test_optionSelected_withSingleSelection_notifiesWithLastSelection() {
+    func test_viewDidLoad_withSingleSelection_configuresTableView() {
+        XCTAssertFalse(makeSUT(options: ["A1", "A2"], allowsMultipleSelection: false).tableView.allowsMultipleSelection)
+    }
+    
+    func test_viewDidLoad_withMultipleSelection_configuresTableView() {
+        XCTAssertTrue(makeSUT(options: ["A1", "A2"], allowsMultipleSelection: true).tableView.allowsMultipleSelection)
+    }
+    
+    func test_optionSelected_withSingleSelection_notifiesDelegateWithLastSelection() {
         var receivedAnswer = [""]
         let sut = makeSUT(options: ["A1", "A2"]) { receivedAnswer = $0 }
         
@@ -50,8 +58,7 @@ class QuestionViewControllerTests: XCTestCase {
     
     func test_optionSelected_withMultipleSelectionEnabled_notifiesDelegateSelection() {
         var receivedAnswer = [""]
-        let sut = makeSUT(options: ["A1", "A2"]) { receivedAnswer = $0 }
-        sut.tableView.allowsMultipleSelection = true
+        let sut = makeSUT(options: ["A1", "A2"], allowsMultipleSelection: true) { receivedAnswer = $0 }
 
         sut.tableView.select(row: 0)
         XCTAssertEqual(receivedAnswer, ["A1"])
@@ -62,8 +69,7 @@ class QuestionViewControllerTests: XCTestCase {
     
     func test_optionDeselected_withMultipleSelectionEnabled_notifiesDelegate() {
         var receivedAnswer = [""]
-        let sut = makeSUT(options: ["A1", "A2"]) { receivedAnswer = $0 }
-        sut.tableView.allowsMultipleSelection = true
+        let sut = makeSUT(options: ["A1", "A2"], allowsMultipleSelection: true) { receivedAnswer = $0 }
 
         sut.tableView.select(row: 0)
         XCTAssertEqual(receivedAnswer, ["A1"])
@@ -77,9 +83,15 @@ class QuestionViewControllerTests: XCTestCase {
     func makeSUT(
         question: String = "",
         options: [String] = [],
+        allowsMultipleSelection: Bool = false,
         selection: @escaping ([String]) -> Void = { _ in }
     ) -> QuestionViewController {
-        let sut = QuestionViewController(question: question, options: options, selection: selection)
+        let sut = QuestionViewController(
+            question: question,
+            options: options,
+            allowsMultipleSelection: allowsMultipleSelection,
+            selection: selection
+        )
         _ = sut.view
         return sut
     }
