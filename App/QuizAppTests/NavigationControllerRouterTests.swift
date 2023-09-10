@@ -88,13 +88,3 @@ class NavigationControllerRouterTests: XCTestCase {
         }
     }
 }
-
-extension Result: Hashable {
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(1)
-    }
-    
-    public static func ==(lhs: Result<Question, Answer>, rhs: Result<Question, Answer>) -> Bool {
-        lhs.score == rhs.score
-    }
-}
