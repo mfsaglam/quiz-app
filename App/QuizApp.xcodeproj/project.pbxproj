@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121334DD2AAE3AC100262EAE /* QuestionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121334DC2AAE3AC100262EAE /* QuestionPresenter.swift */; };
+		121334DF2AAE3AD800262EAE /* QuestionPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121334DE2AAE3AD800262EAE /* QuestionPresenterTests.swift */; };
 		121E19252A9F608000B87439 /* TableViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121E19242A9F608000B87439 /* TableViewHelpers.swift */; };
 		121E19272A9F769200B87439 /* CorrectAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 121E19262A9F769200B87439 /* CorrectAnswerCell.xib */; };
 		121E19292A9F8C4400B87439 /* WrongAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 121E19282A9F8C4400B87439 /* WrongAnswerCell.xib */; };
@@ -62,6 +64,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		121334DC2AAE3AC100262EAE /* QuestionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenter.swift; sourceTree = "<group>"; };
+		121334DE2AAE3AD800262EAE /* QuestionPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenterTests.swift; sourceTree = "<group>"; };
 		121E19242A9F608000B87439 /* TableViewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHelpers.swift; sourceTree = "<group>"; };
 		121E19262A9F769200B87439 /* CorrectAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CorrectAnswerCell.xib; sourceTree = "<group>"; };
 		121E19282A9F8C4400B87439 /* WrongAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WrongAnswerCell.xib; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 				12B465AA2AADEDB20075B6DE /* ViewControllerFactory.swift */,
 				12B465AE2AADEFF00075B6DE /* iOSViewControllerFactory.swift */,
 				12B465B42AAE1A430075B6DE /* ResultsPresenter.swift */,
+				121334DC2AAE3AC100262EAE /* QuestionPresenter.swift */,
 			);
 			path = QuizApp;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				12B465AC2AADEEAB0075B6DE /* iOSViewControllerFactoryTests.swift */,
 				12B465B02AAE17930075B6DE /* ResultsPresenterTests.swift */,
 				12B465B22AAE19280075B6DE /* ResultHelper.swift */,
+				121334DE2AAE3AD800262EAE /* QuestionPresenterTests.swift */,
 			);
 			path = QuizAppTests;
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 				12F1245B2A9B79F30074C2E3 /* QuestionViewController.swift in Sources */,
 				12FB370B2AA37F3A00DAEC35 /* Question.swift in Sources */,
 				123379542AA1E39E00A420AA /* CorrectAnswerCell.swift in Sources */,
+				121334DD2AAE3AC100262EAE /* QuestionPresenter.swift in Sources */,
 				12B465AF2AADEFF00075B6DE /* iOSViewControllerFactory.swift in Sources */,
 				124615FE2AA3492700AEC114 /* NavigationControllerRouter.swift in Sources */,
 				12CE00892A9D277D00B6A8A4 /* ResultsViewController.swift in Sources */,
@@ -322,6 +329,7 @@
 				124615FC2AA252F400AEC114 /* NavigationControllerRouterTests.swift in Sources */,
 				12CE00872A9D26F200B6A8A4 /* ResultsViewControllerTests.swift in Sources */,
 				12B465AD2AADEEAB0075B6DE /* iOSViewControllerFactoryTests.swift in Sources */,
+				121334DF2AAE3AD800262EAE /* QuestionPresenterTests.swift in Sources */,
 				12B465B32AAE19280075B6DE /* ResultHelper.swift in Sources */,
 				12F124592A9B79100074C2E3 /* QuestionViewControllerTests.swift in Sources */,
 				12B465B12AAE17930075B6DE /* ResultsPresenterTests.swift in Sources */,
