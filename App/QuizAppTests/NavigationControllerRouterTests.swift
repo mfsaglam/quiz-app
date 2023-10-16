@@ -58,6 +58,15 @@ class NavigationControllerRouterTests: XCTestCase {
         XCTAssertTrue(callbackWasFired)
     }
     
+    func test_routeToQuestion_multipleAnswer_doesNotConfiguresViewControllerWithSubmitButton() {
+        let viewController = UIViewController()
+        factory.stub(question: Question.singleAnswer("Q1"), with: viewController)
+
+        sut.routeTo(question: Question.singleAnswer("Q1"), answerCallback: { _ in })
+
+        XCTAssertNil(viewController.navigationItem.rightBarButtonItem)
+    }
+    
     func test_routeToQuestion_multipleAnswer_answerCallback_doesNotProgressesToNextQuestion() {
         var callbackWasFired = false
         
@@ -99,7 +108,7 @@ class NavigationControllerRouterTests: XCTestCase {
         sut.routeTo(question: Question.multipleAnswer("Q1"), answerCallback: { _ in callbackWasFired = true })
 
         let button = viewController.navigationItem.rightBarButtonItem!
-        button.target!.performSelector(onMainThread: button.action!, with: nil, waitUntilDone: true)
+        button.simulateTap()
         
         XCTAssertTrue(callbackWasFired)
     }
@@ -132,5 +141,11 @@ class NavigationControllerRouterTests: XCTestCase {
         func resultsViewController(for result: QuizEngine.Result<QuizApp.Question<String>, [String]>) -> UIViewController {
             return stubbedResults[result] ?? UIViewController()
         }
+    }
+}
+
+private extension UIBarButtonItem {
+    func simulateTap() {
+        target!.performSelector(onMainThread: action!, with: nil, waitUntilDone: true)
     }
 }

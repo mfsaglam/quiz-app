@@ -44,7 +44,7 @@ class NavigationControllerRouter: Router {
     }
 }
 
-private class SubmitButtonController {
+private class SubmitButtonController: NSObject {
     let button: UIBarButtonItem
     let callback: ([String]) -> Void
     
@@ -53,6 +53,7 @@ private class SubmitButtonController {
     init(_ button: UIBarButtonItem, _ callback: @escaping ([String]) -> Void) {
         self.button = button
         self.callback = callback
+        super.init()
         self.setup()
     }
     
