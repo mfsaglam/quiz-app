@@ -23,6 +23,8 @@
 		129E87E82A9A0A0000C21183 /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129E87DF2A9A0A0000C21183 /* QuizEngine.framework */; };
 		129E87F82A9A0BA200C21183 /* FlowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E87F72A9A0BA200C21183 /* FlowTest.swift */; };
 		129E87FA2A9A0EA200C21183 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E87F92A9A0EA100C21183 /* Flow.swift */; };
+		12ABD22C2AE59904007C8F87 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ABD22B2AE59904007C8F87 /* Question.swift */; };
+		12ABD22D2AE59904007C8F87 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ABD22B2AE59904007C8F87 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,7 @@
 		129E87E72A9A0A0000C21183 /* QuizEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		129E87F72A9A0BA200C21183 /* FlowTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowTest.swift; sourceTree = "<group>"; };
 		129E87F92A9A0EA100C21183 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
+		12ABD22B2AE59904007C8F87 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,7 @@
 			children = (
 				129E87F92A9A0EA100C21183 /* Flow.swift */,
 				123379592AA21A4800A420AA /* Result.swift */,
+				12ABD22B2AE59904007C8F87 /* Question.swift */,
 				1233795B2AA21A6C00A420AA /* Router.swift */,
 				1233795F2AA21CD800A420AA /* Game.swift */,
 			);
@@ -306,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12ABD22D2AE59904007C8F87 /* Question.swift in Sources */,
 				124615F22AA24CB500AEC114 /* Result.swift in Sources */,
 				124615F52AA24CB500AEC114 /* Flow.swift in Sources */,
 				124615F42AA24CB500AEC114 /* Router.swift in Sources */,
@@ -327,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12ABD22C2AE59904007C8F87 /* Question.swift in Sources */,
 				1233795A2AA21A4800A420AA /* Result.swift in Sources */,
 				1233795C2AA21A6C00A420AA /* Router.swift in Sources */,
 				129E87FA2A9A0EA200C21183 /* Flow.swift in Sources */,
