@@ -69,10 +69,7 @@ class iOSViewControllerFactoryTests: XCTestCase {
     
     // MARK: Helpers
     
-    func makeSUT(
-        options: Dictionary<Question<String>, [String]> = [:],
-        correctAnswers: Dictionary<Question<String>, [String]> = [:]
-    ) -> iOSViewControllerFactory {
+    func makeSUT(options: Dictionary<Question<String>, [String]> = [:], correctAnswers: Dictionary<Question<String>, Set<String>> = [:]) -> iOSViewControllerFactory {
         return iOSViewControllerFactory(
             questions: [singleAnswerQuestion, multipleAnswerQuestion],
             options: options,
@@ -85,18 +82,16 @@ class iOSViewControllerFactoryTests: XCTestCase {
     }
     
     func makeResults() -> (controller: ResultsViewController, presenter: ResultsPresenter) {
-        let userAnswers = [singleAnswerQuestion: ["A1"], multipleAnswerQuestion: ["A1", "A2"]]
-        let correctAnswers = [singleAnswerQuestion: ["A1"], multipleAnswerQuestion: ["A1", "A2"]]
+        let userAnswers = [singleAnswerQuestion: Set(["A1"]), multipleAnswerQuestion: Set(["A1", "A2"])]
+        let correctAnswers = [singleAnswerQuestion: Set(["A1"]), multipleAnswerQuestion: Set(["A1", "A2"])]
         let questions = [singleAnswerQuestion, multipleAnswerQuestion]
+        let orderedOptions = [singleAnswerQuestion: ["A1"], multipleAnswerQuestion: ["A1", "A2"]]
         let result = Result(answers: userAnswers, score: 2)
         
         let sut = makeSUT(correctAnswers: correctAnswers)
         
-        let presenter = ResultsPresenter(
-            result: result,
-            questions: questions,
-            correctAnswers: correctAnswers
-        )
+        let presenter = ResultsPresenter(result: result, questions: questions, options: orderedOptions, correctAnswers: correctAnswers)
+
         let controller = sut.resultsViewController(for: result) as! ResultsViewController
         return (controller, presenter)
     }
