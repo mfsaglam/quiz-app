@@ -25,6 +25,7 @@
 		129E87FA2A9A0EA200C21183 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E87F92A9A0EA100C21183 /* Flow.swift */; };
 		12ABD22C2AE59904007C8F87 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ABD22B2AE59904007C8F87 /* Question.swift */; };
 		12ABD22D2AE59904007C8F87 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ABD22B2AE59904007C8F87 /* Question.swift */; };
+		12E179C22AEE90BE001691A5 /* QuestionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E179C12AEE90BE001691A5 /* QuestionTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		129E87F72A9A0BA200C21183 /* FlowTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowTest.swift; sourceTree = "<group>"; };
 		129E87F92A9A0EA100C21183 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		12ABD22B2AE59904007C8F87 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		12E179C12AEE90BE001691A5 /* QuestionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		129E87EB2A9A0A0000C21183 /* QuizEngineTests */ = {
 			isa = PBXGroup;
 			children = (
+				12E179C12AEE90BE001691A5 /* QuestionTest.swift */,
 				129E87F72A9A0BA200C21183 /* FlowTest.swift */,
 				1233795D2AA21BF800A420AA /* GameTest.swift */,
 				123379612AA21D9700A420AA /* RouterSpy.swift */,
@@ -345,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				129E87F82A9A0BA200C21183 /* FlowTest.swift in Sources */,
+				12E179C22AEE90BE001691A5 /* QuestionTest.swift in Sources */,
 				1233795E2AA21BF800A420AA /* GameTest.swift in Sources */,
 				123379622AA21D9700A420AA /* RouterSpy.swift in Sources */,
 			);
