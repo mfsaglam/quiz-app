@@ -15,7 +15,7 @@ public protocol QuizDelegate {
     func handle(result: Result<Question, Answer>)
 }
 
-@available(*, deprecated)
+@available(*, deprecated) // TODO: Add deprecated message
 public protocol Router {
     associatedtype Question: Hashable
     associatedtype Answer
