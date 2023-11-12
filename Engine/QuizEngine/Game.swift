@@ -9,7 +9,7 @@ import Foundation
 
 /// We deprecate these because everything is `public` might be used by a client. So we need new `api`s.
 @available(*, deprecated) // TODO: Add a deprecated message
-public class Game<Question: Hashable, Answer, R: Router> {
+public class Game<Question: Hashable, Answer, R: Router> { /// Be careful with those generic constraints in public APIs
     private let flow: Any
 
     init(flow: Any) {
