@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// GOAL: Migrate usage of the deprevated `Router` with the new `QuizDelegate` protocol without breaking clients.
+
 /// Used by the QuizEngine's Flow to delegate handling the `nextQuestion` and handling the `Result`.
 /// It is called QuizDelegate because clients doesn't know about the `Flow` outside the `Engine`.
 /// it is not called QuizGameDelegate, because clients should decide if they want to Gamify it or just make a survey type of a quiz.
