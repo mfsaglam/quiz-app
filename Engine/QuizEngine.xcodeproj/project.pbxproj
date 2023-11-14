@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		122F61FB2B03371E0030B65F /* QuizTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122F61FA2B03371E0030B65F /* QuizTest.swift */; };
+		122F61FD2B033BFA0030B65F /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122F61FC2B033BFA0030B65F /* Quiz.swift */; };
 		1233795A2AA21A4800A420AA /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123379592AA21A4800A420AA /* Result.swift */; };
 		1233795C2AA21A6C00A420AA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1233795B2AA21A6C00A420AA /* Router.swift */; };
 		1233795E2AA21BF800A420AA /* DeprecatedGameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1233795D2AA21BF800A420AA /* DeprecatedGameTest.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		122F61FA2B03371E0030B65F /* QuizTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTest.swift; sourceTree = "<group>"; };
+		122F61FC2B033BFA0030B65F /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		123379592AA21A4800A420AA /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		1233795B2AA21A6C00A420AA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		1233795D2AA21BF800A420AA /* DeprecatedGameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeprecatedGameTest.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				12ABD22B2AE59904007C8F87 /* Question.swift */,
 				1233795B2AA21A6C00A420AA /* Router.swift */,
 				1233795F2AA21CD800A420AA /* Game.swift */,
+				122F61FC2B033BFA0030B65F /* Quiz.swift */,
 			);
 			path = QuizEngine;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			files = (
 				12ABD22C2AE59904007C8F87 /* Question.swift in Sources */,
 				1233795A2AA21A4800A420AA /* Result.swift in Sources */,
+				122F61FD2B033BFA0030B65F /* Quiz.swift in Sources */,
 				1233795C2AA21A6C00A420AA /* Router.swift in Sources */,
 				129E87FA2A9A0EA200C21183 /* Flow.swift in Sources */,
 				123379602AA21CD800A420AA /* Game.swift in Sources */,
