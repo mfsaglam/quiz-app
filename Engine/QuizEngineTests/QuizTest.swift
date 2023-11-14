@@ -7,7 +7,7 @@
 
 import Foundation
 import XCTest
-import QuizEngine // TODO: Remove
+import QuizEngine
 
 class QuizTest: XCTestCase {
     private let delegate = DelegateSpy()
@@ -38,7 +38,7 @@ class QuizTest: XCTestCase {
         XCTAssertEqual(delegate.handledResult!.score, 2)
     }
     
-    private class DelegateSpy: Router, QuizDelegate {
+    private class DelegateSpy: QuizDelegate {
         var handledResult: Result<String, String>? = nil
         var answerCallback: ((String) -> Void) = { _ in }
         
@@ -46,16 +46,8 @@ class QuizTest: XCTestCase {
             self.answerCallback = answerCallback
         }
         
-        func routeTo(question: String, answerCallback: @escaping (Answer) -> Void) {
-            self.handle(question: question, answerCallback: answerCallback)
-        }
-        
         func handle(result: Result<String, String>) {
             handledResult = result
-        }
-        
-        func routeTo(result: Result<String, String>) {
-            self.handle(result: result)
         }
     }
 }

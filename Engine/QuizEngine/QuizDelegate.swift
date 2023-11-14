@@ -21,12 +21,3 @@ public protocol QuizDelegate {
     func handle(question: Question, answerCallback: @escaping (Answer) -> Void)
     func handle(result: Result<Question, Answer>) /// Result can be an associatedtype too. it is leaking the implementation to the clients. Migrate first, and start changing it.
 }
-
-@available(*, deprecated) // TODO: Add deprecated message
-public protocol Router {
-    associatedtype Question: Hashable
-    associatedtype Answer
-    
-    func routeTo(question: Question, answerCallback: @escaping (Answer) -> Void)
-    func routeTo(result: Result<Question, Answer>)
-}
