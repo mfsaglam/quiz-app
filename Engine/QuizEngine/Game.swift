@@ -23,7 +23,7 @@ public func startGame<Question: Hashable, Answer: Equatable, R: Router>(
     router: R,
     correctAnswers: [Question: Answer]
 ) -> Game<Question, Answer, R>  where R.Question == Question, R.Answer == Answer {
-    let flow = Flow(questions: questions, router: QuizDelegateToRouterAdapter(router), scoring: { scoring($0, correctAnswers: correctAnswers ) })
+    let flow = Flow(questions: questions, delegate: QuizDelegateToRouterAdapter(router), scoring: { scoring($0, correctAnswers: correctAnswers ) })
     flow.start()
     return Game(flow: flow)
 }
@@ -51,7 +51,7 @@ private class QuizDelegateToRouterAdapter<R: Router>: QuizDelegate {
 }
 
 // TODO: What should we do with this function? (it is a leaky detail)
-private func scoring <Question: Hashable, Answer: Equatable>(
+func scoring <Question: Hashable, Answer: Equatable>(
     _ answers: [Question: Answer],
     correctAnswers: [Question: Answer]
 ) -> Int {
