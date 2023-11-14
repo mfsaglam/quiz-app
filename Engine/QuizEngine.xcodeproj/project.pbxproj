@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		122F61FB2B03371E0030B65F /* QuizTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122F61FA2B03371E0030B65F /* QuizTest.swift */; };
 		1233795A2AA21A4800A420AA /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123379592AA21A4800A420AA /* Result.swift */; };
 		1233795C2AA21A6C00A420AA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1233795B2AA21A6C00A420AA /* Router.swift */; };
 		1233795E2AA21BF800A420AA /* DeprecatedGameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1233795D2AA21BF800A420AA /* DeprecatedGameTest.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		122F61FA2B03371E0030B65F /* QuizTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTest.swift; sourceTree = "<group>"; };
 		123379592AA21A4800A420AA /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		1233795B2AA21A6C00A420AA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		1233795D2AA21BF800A420AA /* DeprecatedGameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeprecatedGameTest.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				12E179C12AEE90BE001691A5 /* QuestionTest.swift */,
 				129E87F72A9A0BA200C21183 /* FlowTest.swift */,
 				1233795D2AA21BF800A420AA /* DeprecatedGameTest.swift */,
+				122F61FA2B03371E0030B65F /* QuizTest.swift */,
 			);
 			path = QuizEngineTests;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			files = (
 				129E87F82A9A0BA200C21183 /* FlowTest.swift in Sources */,
 				12E179C22AEE90BE001691A5 /* QuestionTest.swift in Sources */,
+				122F61FB2B03371E0030B65F /* QuizTest.swift in Sources */,
 				1233795E2AA21BF800A420AA /* DeprecatedGameTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
