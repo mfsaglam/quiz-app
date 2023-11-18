@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Deprecate `Result`
 public struct Result<Question: Hashable, Answer> {
     public var answers: [Question: Answer]
     public var score: Int

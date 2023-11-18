@@ -17,7 +17,9 @@ public protocol QuizDelegate {
     associatedtype Question: Hashable
     associatedtype Answer
     
-    /// thats what it does, it handle's the `Result` and its client's responsibility to handle it.
-    func handle(question: Question, answerCallback: @escaping (Answer) -> Void)
-    func handle(result: Result<Question, Answer>) /// Result can be an associatedtype too. it is leaking the implementation to the clients. Migrate first, and start changing it.
+    func answer(for question: Question, completion: @escaping (Answer) -> Void)
+    func handle(result: Result<Question, Answer>)
+
+    ///func answer(for question: Question, completion: @escaping (Answer) -> Void) /// `DataSource` method
+    ///func didCompleteQuiz(withAnswers: [(question: Question, answer: Answer)]) /// `Delegate` method
 }
