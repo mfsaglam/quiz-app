@@ -6,47 +6,42 @@
 //
 
 import Foundation
-
-// GOAL: Replace <Router> with <QuizDelegate>
-class Flow<Delegate: QuizDelegate>{
+class Flow <Delegate: QuizDelegate> {
     typealias Question = Delegate.Question
     typealias Answer = Delegate.Answer
     
     private let delegate: Delegate
     private let questions: [Question]
     private var answers: [Question: Answer] = [:]
-    private let scoring: ([Question: Answer]) -> Int
+    private var scoring: ([Question: Answer]) -> Int
     
     init(questions: [Question], delegate: Delegate, scoring: @escaping ([Question: Answer]) -> Int) {
-        self.delegate = delegate
         self.questions = questions
+        self.delegate = delegate
         self.scoring = scoring
     }
     
     func start() {
-        if let firstQuestion = questions.first {
-            delegate.answer(for: firstQuestion, completion: nextCallback(from: firstQuestion))
+        delegateQuestionHandling(at: questions.startIndex)
+    }
+    
+    private func delegateQuestionHandling(at index: Int) {
+        if index < questions.endIndex {
+            let question = questions[index]
+            delegate.answer(for: question, completion: answer(for: question, at: index))
         } else {
             delegate.handle(result: result())
         }
     }
     
-    private func nextCallback(from question: Question) -> (Answer) -> Void {
-        return { [weak self] in self?.routeNext(question, $0) }
+    private func delegateQuestionHandling(after index: Int) {
+        delegateQuestionHandling(at: questions.index(after: index))
     }
     
-    private func routeNext(_ question: Question,_  answer: Answer) {
-        if let currentQuestionIndex = questions.firstIndex(of: question) {
-            answers[question] = answer
-            
-            let nextQuestionIndex = currentQuestionIndex + 1
-            if nextQuestionIndex < questions.count {
-                let nextQuestion = questions[nextQuestionIndex]
-                delegate.answer(for: nextQuestion, completion: nextCallback(from: nextQuestion))
-            } else {
-                delegate.handle(result: result())
-            }
-
+    private func answer(for question: Question, at index: Int) -> (Answer) -> Void {
+        return { [weak self] answer in
+            self?.answers[question] = answer
+            self?.delegateQuestionHandling(after: index)
         }
     }
     
