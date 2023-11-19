@@ -5,6 +5,7 @@
 //  Created by Fatih Sağlam on 26.08.2023.
 //
 
+// TODO: Remove FLow.scoring dependency
 import Foundation
 class Flow <Delegate: QuizDelegate> {
     typealias Question = Delegate.Question
