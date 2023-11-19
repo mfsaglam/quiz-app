@@ -5,7 +5,6 @@
 //  Created by Fatih Sağlam on 26.08.2023.
 //
 
-// TODO: Remove FLow.scoring dependency
 import Foundation
 class Flow <Delegate: QuizDelegate> {
     typealias Question = Delegate.Question
@@ -15,9 +14,13 @@ class Flow <Delegate: QuizDelegate> {
     private let questions: [Question]
     private var newAnswers: [(Question, Answer)] = [] // TODO: Renama Flow.newAnswers
     private var answers: [Question: Answer] = [:]
-    private var scoring: ([Question: Answer]) -> Int
+    private var scoring: ([Question: Answer]) -> Int // TODO: Remove FLow.scoring dependency
     
-    init(questions: [Question], delegate: Delegate, scoring: @escaping ([Question: Answer]) -> Int) {
+    init(
+        questions: [Question],
+        delegate: Delegate,
+scoring: @escaping ([Question: Answer]) -> Int = { _ in 0 }
+    ) {
         self.questions = questions
         self.delegate = delegate
         self.scoring = scoring
