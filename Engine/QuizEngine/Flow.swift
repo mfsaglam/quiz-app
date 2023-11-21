@@ -19,7 +19,7 @@ class Flow <Delegate: QuizDelegate> {
     init(
         questions: [Question],
         delegate: Delegate,
-scoring: @escaping ([Question: Answer]) -> Int = { _ in 0 }
+        scoring: @escaping ([Question: Answer]) -> Int = { _ in 0 }
     ) {
         self.questions = questions
         self.delegate = delegate
@@ -36,7 +36,7 @@ scoring: @escaping ([Question: Answer]) -> Int = { _ in 0 }
             delegate.answer(for: question, completion: answer(for: question, at: index))
         } else {
             delegate.didCompleteQuiz(withAnswers: newAnswers)
-            delegate.handle(result: result())
+//            delegate.handle(result: result())
         }
     }
     
