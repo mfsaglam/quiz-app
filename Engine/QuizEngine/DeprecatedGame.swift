@@ -34,8 +34,7 @@ public func startGame<Question: Hashable, Answer: Equatable, R: Router>(
 ) -> Game<Question, Answer, R>  where R.Question == Question, R.Answer == Answer {
     let flow = Flow(
         questions: questions,
-        delegate: QuizDelegateToRouterAdapter(router, correctAnswers),
-        scoring: { scoring($0, correctAnswers: correctAnswers) }
+        delegate: QuizDelegateToRouterAdapter(router, correctAnswers)
     )
     flow.start()
     return Game(flow: flow)
