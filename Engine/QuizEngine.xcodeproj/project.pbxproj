@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121C27512B0C6F3400FECED2 /* QuizTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122F61FA2B03371E0030B65F /* QuizTest.swift */; };
 		122F61FB2B03371E0030B65F /* QuizTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122F61FA2B03371E0030B65F /* QuizTest.swift */; };
 		122F61FD2B033BFA0030B65F /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122F61FC2B033BFA0030B65F /* Quiz.swift */; };
 		122F61FF2B0345180030B65F /* DeprecatedGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1233795F2AA21CD800A420AA /* DeprecatedGame.swift */; };
@@ -331,6 +332,7 @@
 			files = (
 				124615EF2AA24CA300AEC114 /* FlowTest.swift in Sources */,
 				124615F02AA24CA300AEC114 /* DeprecatedGameTest.swift in Sources */,
+				121C27512B0C6F3400FECED2 /* QuizTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
