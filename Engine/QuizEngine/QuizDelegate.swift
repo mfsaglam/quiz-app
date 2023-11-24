@@ -19,12 +19,4 @@ public protocol QuizDelegate {
     
     func answer(for question: Question, completion: @escaping (Answer) -> Void) /// `DataSource` method
     func didCompleteQuiz(withAnswers answers: [(question: Question, answer: Answer)]) /// `Delegate` method
-
-    @available(*, deprecated, message: "use didCompleteQuiz(withAnswers:) instead")
-    func handle(result: Result<Question, Answer>)
-}
-
-extension QuizDelegate {
-    #warning("Remove this at some point!")
-    func didCompleteQuiz(withAnswers: [(question: Question, answer: Answer)]) {}
 }

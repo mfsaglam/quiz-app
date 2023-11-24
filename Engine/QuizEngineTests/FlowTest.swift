@@ -70,13 +70,6 @@ class FlowTest: XCTestCase {
         XCTAssertTrue(delegate.completedQuizzes[0].isEmpty)
     }
     
-    func test_start_withOneQuestion_doesNotDelegateResultHandling() {
-        let sut = makeSUT(questions: ["Q1"])
-        sut.start()
-
-        XCTAssertEqual(delegate.handledResult?.answers, nil)
-    }
-    
     func test_start_withOneQuestion_doesNotCompleteQuiz() {
         makeSUT(questions: ["Q1"]).start()
         
@@ -134,7 +127,6 @@ class FlowTest: XCTestCase {
         var questionsAsked: [String] = []
         var answerCompletions: [((String) -> Void)] = []
         
-        var handledResult: Result<String, String>? = nil
         var completedQuizzes: [[(String, String)]] = []
 
         func answer(for question: String, completion: @escaping (String) -> Void) {
@@ -144,10 +136,6 @@ class FlowTest: XCTestCase {
         
         func didCompleteQuiz(withAnswers answers: [(question: String, answer: String)]) {
             completedQuizzes.append(answers)
-        }
-        
-        func handle(result: Result<String, String>) {
-            handledResult = result
         }
     }
 }

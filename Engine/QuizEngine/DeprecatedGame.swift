@@ -74,9 +74,7 @@ private class QuizDelegateToRouterAdapter<R: Router>: QuizDelegate where R.Answe
         )
         router.routeTo(result: result)
     }
-    
-    func handle(result: Result<R.Question, R.Answer>) {}
-    
+        
     private func scoring<Question, Answer: Equatable>(
         _ answers: [Question: Answer],
         correctAnswers: [Question: Answer]
