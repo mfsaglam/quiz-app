@@ -16,6 +16,17 @@ public protocol Router {
     func routeTo(result: Result<Question, Answer>)
 }
 
+@available(*, deprecated)
+public struct Result<Question: Hashable, Answer> {
+    public var answers: [Question: Answer]
+    public var score: Int
+    
+    public init(answers: [Question: Answer], score: Int) {
+        self.answers = answers
+        self.score = score
+    }
+}
+
 /// We deprecate these because everything is `public` might be used by a client. So we need new `api`s.
 @available(*, deprecated) // TODO: Add a deprecated message
 public class Game<Question: Hashable, Answer, R: Router> { /// Be careful with those generic constraints in public APIs
