@@ -13,8 +13,7 @@ import Foundation
 /// It is called QuizDelegate because clients doesn't know about the `Flow` outside the `Engine`.
 /// it is not called QuizGameDelegate, because clients should decide if they want to Gamify it or just make a survey type of a quiz.
 public protocol QuizDelegate {
-    // TODO: Remove Hashable constraint and make the result type Generic.
-    associatedtype Question: Hashable
+    associatedtype Question
     associatedtype Answer
     
     func answer(for question: Question, completion: @escaping (Answer) -> Void) /// `DataSource` method
