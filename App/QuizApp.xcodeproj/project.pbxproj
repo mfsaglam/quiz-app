@@ -35,6 +35,7 @@
 		12F124592A9B79100074C2E3 /* QuestionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F124582A9B79100074C2E3 /* QuestionViewControllerTests.swift */; };
 		12F1245B2A9B79F30074C2E3 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F1245A2A9B79F30074C2E3 /* QuestionViewController.swift */; };
 		12F1245D2A9B7A9E0074C2E3 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F1245C2A9B7A9E0074C2E3 /* QuestionViewController.xib */; };
+		12F3EDD52B14889E00EA7972 /* ScoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F3EDD42B14889E00EA7972 /* ScoreTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		12F124582A9B79100074C2E3 /* QuestionViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewControllerTests.swift; sourceTree = "<group>"; };
 		12F1245A2A9B79F30074C2E3 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		12F1245C2A9B7A9E0074C2E3 /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
+		12F3EDD42B14889E00EA7972 /* ScoreTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +346,7 @@
 		12F1243E2A9B77670074C2E3 /* QuizAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				12F3EDD32B14888E00EA7972 /* Scoring */,
 				12E179C32AEE915A001691A5 /* Routing */,
 				12E179BD2AEE9029001691A5 /* Presentation */,
 				12E179B92AEE8F80001691A5 /* UI */,
@@ -360,6 +363,15 @@
 			);
 			path = QuizAppUITests;
 			sourceTree = "<group>";
+		};
+		12F3EDD32B14888E00EA7972 /* Scoring */ = {
+			isa = PBXGroup;
+			children = (
+				12F3EDD42B14889E00EA7972 /* ScoreTest.swift */,
+			);
+			name = Scoring;
+			path = QuizAppTests/Scoring;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -489,6 +501,7 @@
 				124615FC2AA252F400AEC114 /* NavigationControllerRouterTests.swift in Sources */,
 				12CE00872A9D26F200B6A8A4 /* ResultsViewControllerTests.swift in Sources */,
 				12B465AD2AADEEAB0075B6DE /* iOSViewControllerFactoryTests.swift in Sources */,
+				12F3EDD52B14889E00EA7972 /* ScoreTest.swift in Sources */,
 				121334DF2AAE3AD800262EAE /* QuestionPresenterTests.swift in Sources */,
 				12B465B32AAE19280075B6DE /* ResultHelper.swift in Sources */,
 				12F124592A9B79100074C2E3 /* QuestionViewControllerTests.swift in Sources */,
