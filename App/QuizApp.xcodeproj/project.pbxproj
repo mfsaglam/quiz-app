@@ -36,6 +36,7 @@
 		12F1245B2A9B79F30074C2E3 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F1245A2A9B79F30074C2E3 /* QuestionViewController.swift */; };
 		12F1245D2A9B7A9E0074C2E3 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F1245C2A9B7A9E0074C2E3 /* QuestionViewController.xib */; };
 		12F3EDD52B14889E00EA7972 /* ScoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F3EDD42B14889E00EA7972 /* ScoreTest.swift */; };
+		12F3EDD82B14890D00EA7972 /* BasicScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F3EDD72B14890D00EA7972 /* BasicScore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		12F1245A2A9B79F30074C2E3 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		12F1245C2A9B7A9E0074C2E3 /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
 		12F3EDD42B14889E00EA7972 /* ScoreTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreTest.swift; sourceTree = "<group>"; };
+		12F3EDD72B14890D00EA7972 /* BasicScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicScore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,6 +336,7 @@
 		12F124272A9B77670074C2E3 /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
+				12F3EDD62B1488F900EA7972 /* Scoring */,
 				12E179B72AEE8F22001691A5 /* Routing */,
 				12E179B42AEE8E7E001691A5 /* Presentation */,
 				12E179AE2AEE8D5D001691A5 /* UI */,
@@ -372,6 +375,14 @@
 			name = Scoring;
 			path = QuizAppTests/Scoring;
 			sourceTree = SOURCE_ROOT;
+		};
+		12F3EDD62B1488F900EA7972 /* Scoring */ = {
+			isa = PBXGroup;
+			children = (
+				12F3EDD72B14890D00EA7972 /* BasicScore.swift */,
+			);
+			path = Scoring;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -479,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				123379522AA1E32500A420AA /* UITableViewExtensions.swift in Sources */,
+				12F3EDD82B14890D00EA7972 /* BasicScore.swift in Sources */,
 				12F124292A9B77670074C2E3 /* AppDelegate.swift in Sources */,
 				12B465B52AAE1A430075B6DE /* ResultsPresenter.swift in Sources */,
 				123379562AA1E3BA00A420AA /* WrongAnswerCell.swift in Sources */,
