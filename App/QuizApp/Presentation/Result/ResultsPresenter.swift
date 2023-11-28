@@ -16,6 +16,7 @@ final class ResultsPresenter {
     let correctAnswers: Answers
     let scorer: Scorer
     
+    // TODO: Remove ResultsPresenter deprecated init
     init(
         result: Result<Question<String>, [String]>,
         questions: [Question<String>],
