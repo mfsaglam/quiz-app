@@ -16,6 +16,16 @@ final class ResultsPresenter {
     let correctAnswers: Answers
     let scorer: Scorer
     
+    init(
+        userAnswers: Answers,
+        correctAnswers: Answers,
+        scorer: @escaping Scorer
+    ) {
+        self.userAnswers = userAnswers
+        self.correctAnswers = correctAnswers
+        self.scorer = scorer
+    }
+    
     // TODO: Remove ResultsPresenter deprecated init
     init(
         result: Result<Question<String>, [String]>,
