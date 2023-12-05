@@ -16,7 +16,7 @@ public protocol Router {
     func routeTo(result: Result<Question, Answer>)
 }
 
-@available(*, deprecated) // TODO: Add a deprecated message.
+@available(*, deprecated, message: "scpring won't be supported in the future.")
 // TODO: Implement a scoring behaviour
 public struct Result<Question: Hashable, Answer> {
     public var answers: [Question: Answer]
