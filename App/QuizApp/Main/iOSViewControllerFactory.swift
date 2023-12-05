@@ -25,7 +25,7 @@ class iOSViewControllerFactory: ViewControllerFactory {
     }
     
     // TODO: - Remove Deprecated initializer
-    init(
+    private init(
         questions: [Question<String>],
         options: Dictionary<Question<String>, [String]>,
         correctAnswers: Dictionary<Question<String>, [String]>
