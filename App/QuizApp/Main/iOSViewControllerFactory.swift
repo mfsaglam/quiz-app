@@ -75,6 +75,4 @@ final class iOSViewControllerFactory: ViewControllerFactory {
         controller.title = presenter.title
         return controller
     }
-    
-    
 }
