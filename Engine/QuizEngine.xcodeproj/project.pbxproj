@@ -96,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		122B0BEA2B1ED84800D617F2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				126EDC332B10572000619F57 /* Assertions.swift */,
+				126EDC362B1057EA00619F57 /* DelegateSpy.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		129E87D52A9A0A0000C21183 = {
 			isa = PBXGroup;
 			children = (
@@ -131,12 +140,11 @@
 		129E87EB2A9A0A0000C21183 /* QuizEngineTests */ = {
 			isa = PBXGroup;
 			children = (
+				122B0BEA2B1ED84800D617F2 /* Helpers */,
 				12E179C12AEE90BE001691A5 /* QuestionTest.swift */,
 				129E87F72A9A0BA200C21183 /* FlowTest.swift */,
 				1233795D2AA21BF800A420AA /* DeprecatedGameTest.swift */,
 				122F61FA2B03371E0030B65F /* QuizTest.swift */,
-				126EDC332B10572000619F57 /* Assertions.swift */,
-				126EDC362B1057EA00619F57 /* DelegateSpy.swift */,
 			);
 			path = QuizEngineTests;
 			sourceTree = "<group>";
