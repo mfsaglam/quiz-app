@@ -31,10 +31,10 @@ public struct Result<Question: Hashable, Answer> {
 /// We deprecate these because everything is `public` might be used by a client. So we need new `api`s.
 @available(*, deprecated, message: "Use Quiz instead.")
 public class Game<Question: Hashable, Answer, R: Router> { /// Be careful with those generic constraints in public APIs
-    private let flow: Any
+    let quiz: Quiz
 
-    init(flow: Any) {
-        self.flow = flow
+    init(quiz: Quiz) {
+        self.quiz = quiz
     }
 }
 
@@ -44,12 +44,9 @@ public func startGame<Question: Hashable, Answer: Equatable, R: Router>(
     router: R,
     correctAnswers: [Question: Answer]
 ) -> Game<Question, Answer, R>  where R.Question == Question, R.Answer == Answer {
-    let flow = Flow(
-        questions: questions,
-        delegate: QuizDelegateToRouterAdapter(router, correctAnswers)
-    )
-    flow.start()
-    return Game(flow: flow)
+    let adapter = QuizDelegateToRouterAdapter(router, correctAnswers)
+    let quiz = Quiz.start(questions: questions, delegate: adapter)
+    return Game(quiz: quiz)
 }
 
 @available(*, deprecated, message: "remove along with the deprecated game types.")
