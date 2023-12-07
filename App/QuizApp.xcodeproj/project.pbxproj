@@ -117,6 +117,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		122B0BEB2B216D5D00D617F2 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				12E179B32AEE8E52001691A5 /* Launch */,
+				12E179B22AEE8E36001691A5 /* Helpers */,
+				12E179B02AEE8DC3001691A5 /* Result */,
+				12E179AF2AEE8DAE001691A5 /* Question */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		122B0BEC2B216D8700D617F2 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				12E179BC2AEE8FE6001691A5 /* Helpers */,
+				12E179BA2AEE8F9E001691A5 /* Result */,
+				12E179B82AEE8F75001691A5 /* Question */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		124615F62AA251F900AEC114 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,10 +160,7 @@
 		12E179AE2AEE8D5D001691A5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				12E179B32AEE8E52001691A5 /* Launch */,
-				12E179B22AEE8E36001691A5 /* Helpers */,
-				12E179B02AEE8DC3001691A5 /* Result */,
-				12E179AF2AEE8DAE001691A5 /* Question */,
+				122B0BEB2B216D5D00D617F2 /* UIKit */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -238,9 +256,7 @@
 		12E179B92AEE8F80001691A5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				12E179BC2AEE8FE6001691A5 /* Helpers */,
-				12E179BA2AEE8F9E001691A5 /* Result */,
-				12E179B82AEE8F75001691A5 /* Question */,
+				122B0BEC2B216D8700D617F2 /* UIKit */,
 			);
 			path = UI;
 			sourceTree = "<group>";
