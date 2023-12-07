@@ -26,7 +26,6 @@
 		124615FC2AA252F400AEC114 /* NavigationControllerRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124615FB2AA252F400AEC114 /* NavigationControllerRouterTests.swift */; };
 		124615FE2AA3492700AEC114 /* NavigationControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124615FD2AA3492700AEC114 /* NavigationControllerRouter.swift */; };
 		12B465AB2AADEDB20075B6DE /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B465AA2AADEDB20075B6DE /* ViewControllerFactory.swift */; };
-		12B465AD2AADEEAB0075B6DE /* iOSViewControllerFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B465AC2AADEEAB0075B6DE /* iOSViewControllerFactoryTests.swift */; };
 		12B465AF2AADEFF00075B6DE /* iOSUIKitViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B465AE2AADEFF00075B6DE /* iOSUIKitViewControllerFactory.swift */; };
 		12B465B12AAE17930075B6DE /* ResultsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B465B02AAE17930075B6DE /* ResultsPresenterTests.swift */; };
 		12B465B52AAE1A430075B6DE /* ResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B465B42AAE1A430075B6DE /* ResultsPresenter.swift */; };
@@ -86,7 +85,6 @@
 		124615FB2AA252F400AEC114 /* NavigationControllerRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouterTests.swift; sourceTree = "<group>"; };
 		124615FD2AA3492700AEC114 /* NavigationControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouter.swift; sourceTree = "<group>"; };
 		12B465AA2AADEDB20075B6DE /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
-		12B465AC2AADEEAB0075B6DE /* iOSViewControllerFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSViewControllerFactoryTests.swift; sourceTree = "<group>"; };
 		12B465AE2AADEFF00075B6DE /* iOSUIKitViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSUIKitViewControllerFactory.swift; sourceTree = "<group>"; };
 		12B465B02AAE17930075B6DE /* ResultsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPresenterTests.swift; sourceTree = "<group>"; };
 		12B465B42AAE1A430075B6DE /* ResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPresenter.swift; sourceTree = "<group>"; };
@@ -303,7 +301,6 @@
 			isa = PBXGroup;
 			children = (
 				122B0BF72B2178C100D617F2 /* iOSSwiftUIViewControllerFactoryTests.swift */,
-				12B465AC2AADEEAB0075B6DE /* iOSViewControllerFactoryTests.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -553,7 +550,6 @@
 				124615FC2AA252F400AEC114 /* NavigationControllerRouterTests.swift in Sources */,
 				122B0BF82B2178C100D617F2 /* iOSSwiftUIViewControllerFactoryTests.swift in Sources */,
 				12CE00872A9D26F200B6A8A4 /* ResultsViewControllerTests.swift in Sources */,
-				12B465AD2AADEEAB0075B6DE /* iOSViewControllerFactoryTests.swift in Sources */,
 				12F3EDD52B14889E00EA7972 /* ScoreTest.swift in Sources */,
 				121334DF2AAE3AD800262EAE /* QuestionPresenterTests.swift in Sources */,
 				12F124592A9B79100074C2E3 /* QuestionViewControllerTests.swift in Sources */,
