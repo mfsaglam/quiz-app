@@ -70,8 +70,8 @@ class iOSViewControllerFactoryTest: XCTestCase {
     let multipleAnswerQuestion = Question.multipleAnswer("Q1")
     let options = ["A1", "A2"]
     
-    private func makeSUT(options: Dictionary<Question<String>, [String]> = [:], correctAnswers: [(Question<String>, [String])] = []) -> iOSViewControllerFactory {
-        return iOSViewControllerFactory(options: options, correctAnswers: correctAnswers)
+    private func makeSUT(options: Dictionary<Question<String>, [String]> = [:], correctAnswers: [(Question<String>, [String])] = []) -> iOSUIKitViewControllerFactory {
+        return iOSUIKitViewControllerFactory(options: options, correctAnswers: correctAnswers)
     }
     
     private func makeQuestionController(question: Question<String> = Question.singleAnswer("")) -> QuestionViewController {
