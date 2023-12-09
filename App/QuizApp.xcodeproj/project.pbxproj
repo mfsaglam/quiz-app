@@ -161,12 +161,6 @@
 			children = (
 				12DCA6232B249F12000321B9 /* Question */,
 				12DCA6202B249EE5000321B9 /* Helpers */,
-				122B0BEE2B216E8B00D617F2 /* SingleAnswerQuestion.swift */,
-				122B0BF02B21701200D617F2 /* HeaderView.swift */,
-				122B0BF22B2170DB00D617F2 /* SingleTextSelectionCell.swift */,
-				12DCA6182B248C67000321B9 /* MultipleSelectionStore.swift */,
-				12DCA61A2B248CE5000321B9 /* MultipleAnswerQuestion.swift */,
-				12DCA61C2B248D71000321B9 /* MultipleTextSelectionCell.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -198,6 +192,12 @@
 		12DCA6232B249F12000321B9 /* Question */ = {
 			isa = PBXGroup;
 			children = (
+				122B0BEE2B216E8B00D617F2 /* SingleAnswerQuestion.swift */,
+				122B0BF02B21701200D617F2 /* HeaderView.swift */,
+				122B0BF22B2170DB00D617F2 /* SingleTextSelectionCell.swift */,
+				12DCA6182B248C67000321B9 /* MultipleSelectionStore.swift */,
+				12DCA61A2B248CE5000321B9 /* MultipleAnswerQuestion.swift */,
+				12DCA61C2B248D71000321B9 /* MultipleTextSelectionCell.swift */,
 			);
 			path = Question;
 			sourceTree = "<group>";
