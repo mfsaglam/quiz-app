@@ -185,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				12DCA6212B249EF1000321B9 /* RoundedButton.swift */,
+				122B0BF02B21701200D617F2 /* HeaderView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -193,7 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				122B0BEE2B216E8B00D617F2 /* SingleAnswerQuestion.swift */,
-				122B0BF02B21701200D617F2 /* HeaderView.swift */,
 				122B0BF22B2170DB00D617F2 /* SingleTextSelectionCell.swift */,
 				12DCA6182B248C67000321B9 /* MultipleSelectionStore.swift */,
 				12DCA61A2B248CE5000321B9 /* MultipleAnswerQuestion.swift */,
