@@ -14,7 +14,7 @@ struct MultipleAnswerQuestion: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0.0) {
-            QuestionHeader(title: title, question: question)
+            HeaderView(title: title, subtitle: question)
 
             ForEach(store.options.indices) { i in
                 MultipleTextSelectionCell(option: $store.options[i])
@@ -22,20 +22,13 @@ struct MultipleAnswerQuestion: View {
 
             Spacer()
 
-            Button(action: store.submit, label: {
-                HStack {
-                    Spacer()
-                    Text("Submit")
-                        .padding()
-                        .foregroundColor(Color.white)
-                    Spacer()
-                }
-                .background(Color.blue)
-                .cornerRadius(25)
-            })
-            .buttonStyle(PlainButtonStyle())
+            RoundedButton(
+                title: "Submit",
+                isEnabled: store.canSubmit,
+                action: store.submit
+            )
             .padding()
-            .disabled(!store.canSubmit)
+            #warning("fix submit button not working.")
         }
     }
 }
