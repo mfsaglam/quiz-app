@@ -159,6 +159,7 @@
 		122B0BED2B216E7200D617F2 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				12DCA6242B249FC5000321B9 /* Result */,
 				12DCA6232B249F12000321B9 /* Question */,
 				12DCA6202B249EE5000321B9 /* Helpers */,
 			);
@@ -200,6 +201,13 @@
 				12DCA61C2B248D71000321B9 /* MultipleTextSelectionCell.swift */,
 			);
 			path = Question;
+			sourceTree = "<group>";
+		};
+		12DCA6242B249FC5000321B9 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Result;
 			sourceTree = "<group>";
 		};
 		12E179AD2AEE8C81001691A5 /* Main */ = {
