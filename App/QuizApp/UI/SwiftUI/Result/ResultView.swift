@@ -20,6 +20,7 @@ struct ResultView: View {
             List(answers, id: \.question) { model in
                 ResultAnswerCell(model: model)
             }
+            .listStyle(.plain)
 
             Spacer()
 
