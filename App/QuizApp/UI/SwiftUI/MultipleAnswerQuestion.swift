@@ -58,16 +58,16 @@ struct MultipleAnswerQuestion_Previews: PreviewProvider {
             VStack {
                 MultipleAnswerQuestion(
                     title: "1 of 2",
-                    question: "What's Mike's nationality?",
+                    question: "What are Caio's nationalities?",
                     store: .init(
                         options: [
                             "Portuguese",
                             "American",
-                            "Greek",
+                            "Brazilian",
                             "Canadian"
                         ], handler: { selection = $0 }
                     ))
-
+                
                 Text("Last submission: " + selection.joined(separator: ", "))
             }
         }
