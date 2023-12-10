@@ -28,7 +28,6 @@ struct MultipleAnswerQuestion: View {
                 action: store.submit
             )
             .padding()
-            #warning("fix submit button not working.")
         }
     }
 }

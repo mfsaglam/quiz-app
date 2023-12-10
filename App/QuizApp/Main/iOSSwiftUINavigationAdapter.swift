@@ -40,8 +40,7 @@ final class iOSSwiftUINavigationAdapter: ViewControllerFactory, QuizDelegate {
     }
     
     private func show(_ controller: UIViewController) {
-        navigation.pushViewController(controller, animated: true)
-    }
+        navigation.setViewControllers([controller], animated: true)    }
 
     func questionViewController(for question: Question, answerCallback: @escaping (Answer) -> Void) -> UIViewController {
         guard let options = self.options[question] else {
