@@ -44,15 +44,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let options = [question1: options1, question2: options2]
         let correctAnswers = [(question1, [option3]), (question2, [option4, option6])]
         
-        let factory = iOSSwiftUIViewControllerFactory(
+        let adapter = iOSSwiftUINavigationAdapter(
+            navigation: navigationController,
             options: options,
             correctAnswers: correctAnswers,
             playAgain: startNewQuiz
         )
+
         
-        let router = NavigationControllerRouter(navigationController, factory: factory)
-        
-        quiz = Quiz.start(questions: questions, delegate: router)
+        quiz = Quiz.start(questions: questions, delegate: adapter)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

@@ -15,7 +15,7 @@
 		122B0BEF2B216E8B00D617F2 /* SingleAnswerQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122B0BEE2B216E8B00D617F2 /* SingleAnswerQuestion.swift */; };
 		122B0BF12B21701200D617F2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122B0BF02B21701200D617F2 /* HeaderView.swift */; };
 		122B0BF32B2170DB00D617F2 /* SingleTextSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122B0BF22B2170DB00D617F2 /* SingleTextSelectionCell.swift */; };
-		122B0BF52B21789700D617F2 /* iOSSwiftUIViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122B0BF42B21789700D617F2 /* iOSSwiftUIViewControllerFactory.swift */; };
+		122B0BF52B21789700D617F2 /* iOSSwiftUINavigationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122B0BF42B21789700D617F2 /* iOSSwiftUINavigationAdapter.swift */; };
 		122B0BF82B2178C100D617F2 /* iOSSwiftUIViewControllerFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122B0BF72B2178C100D617F2 /* iOSSwiftUIViewControllerFactoryTests.swift */; };
 		123379522AA1E32500A420AA /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123379512AA1E32500A420AA /* UITableViewExtensions.swift */; };
 		123379542AA1E39E00A420AA /* CorrectAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123379532AA1E39E00A420AA /* CorrectAnswerCell.swift */; };
@@ -82,7 +82,7 @@
 		122B0BEE2B216E8B00D617F2 /* SingleAnswerQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAnswerQuestion.swift; sourceTree = "<group>"; };
 		122B0BF02B21701200D617F2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		122B0BF22B2170DB00D617F2 /* SingleTextSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTextSelectionCell.swift; sourceTree = "<group>"; };
-		122B0BF42B21789700D617F2 /* iOSSwiftUIViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSwiftUIViewControllerFactory.swift; sourceTree = "<group>"; };
+		122B0BF42B21789700D617F2 /* iOSSwiftUINavigationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSwiftUINavigationAdapter.swift; sourceTree = "<group>"; };
 		122B0BF72B2178C100D617F2 /* iOSSwiftUIViewControllerFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSwiftUIViewControllerFactoryTests.swift; sourceTree = "<group>"; };
 		123379512AA1E32500A420AA /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		123379532AA1E39E00A420AA /* CorrectAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectAnswerCell.swift; sourceTree = "<group>"; };
@@ -223,7 +223,7 @@
 				12F1242A2A9B77670074C2E3 /* SceneDelegate.swift */,
 				12F124312A9B77670074C2E3 /* Assets.xcassets */,
 				12B465AE2AADEFF00075B6DE /* iOSUIKitViewControllerFactory.swift */,
-				122B0BF42B21789700D617F2 /* iOSSwiftUIViewControllerFactory.swift */,
+				122B0BF42B21789700D617F2 /* iOSSwiftUINavigationAdapter.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -587,7 +587,7 @@
 				122B0BEF2B216E8B00D617F2 /* SingleAnswerQuestion.swift in Sources */,
 				123379582AA1E3E000A420AA /* PresentableAnswer.swift in Sources */,
 				12DCA6222B249EF1000321B9 /* RoundedButton.swift in Sources */,
-				122B0BF52B21789700D617F2 /* iOSSwiftUIViewControllerFactory.swift in Sources */,
+				122B0BF52B21789700D617F2 /* iOSSwiftUINavigationAdapter.swift in Sources */,
 				12B465AB2AADEDB20075B6DE /* ViewControllerFactory.swift in Sources */,
 				122B0BF32B2170DB00D617F2 /* SingleTextSelectionCell.swift in Sources */,
 				12DCA61B2B248CE5000321B9 /* MultipleAnswerQuestion.swift in Sources */,
