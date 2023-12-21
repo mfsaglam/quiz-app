@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1212F5A02B33CE9000787710 /* BasicQuizBuilderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212F59F2B33CE9000787710 /* BasicQuizBuilderTest.swift */; };
+		1212F5A22B33DAAD00787710 /* BasicQuizBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212F5A12B33DAAD00787710 /* BasicQuizBuilder.swift */; };
 		121334DD2AAE3AC100262EAE /* QuestionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121334DC2AAE3AC100262EAE /* QuestionPresenter.swift */; };
 		121334DF2AAE3AD800262EAE /* QuestionPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121334DE2AAE3AD800262EAE /* QuestionPresenterTests.swift */; };
 		121E19252A9F608000B87439 /* TableViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121E19242A9F608000B87439 /* TableViewHelpers.swift */; };
@@ -77,6 +79,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1212F59F2B33CE9000787710 /* BasicQuizBuilderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicQuizBuilderTest.swift; sourceTree = "<group>"; };
+		1212F5A12B33DAAD00787710 /* BasicQuizBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicQuizBuilder.swift; sourceTree = "<group>"; };
 		121334DC2AAE3AC100262EAE /* QuestionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenter.swift; sourceTree = "<group>"; };
 		121334DE2AAE3AD800262EAE /* QuestionPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenterTests.swift; sourceTree = "<group>"; };
 		121E19242A9F608000B87439 /* TableViewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHelpers.swift; sourceTree = "<group>"; };
@@ -458,6 +462,7 @@
 			isa = PBXGroup;
 			children = (
 				12F3EDD42B14889E00EA7972 /* ScoreTest.swift */,
+				1212F59F2B33CE9000787710 /* BasicQuizBuilderTest.swift */,
 			);
 			name = Scoring;
 			path = QuizAppTests/Scoring;
@@ -467,6 +472,7 @@
 			isa = PBXGroup;
 			children = (
 				12F3EDD72B14890D00EA7972 /* BasicScore.swift */,
+				1212F5A12B33DAAD00787710 /* BasicQuizBuilder.swift */,
 			);
 			path = Scoring;
 			sourceTree = "<group>";
@@ -579,6 +585,7 @@
 				12DCA6282B24A075000321B9 /* ResultAnswerCell.swift in Sources */,
 				1235B16A2B2AAB1600F515D6 /* QuizNavigationView.swift in Sources */,
 				122B0BF12B21701200D617F2 /* HeaderView.swift in Sources */,
+				1212F5A22B33DAAD00787710 /* BasicQuizBuilder.swift in Sources */,
 				123379522AA1E32500A420AA /* UITableViewExtensions.swift in Sources */,
 				12DCA6262B24A049000321B9 /* ResultView.swift in Sources */,
 				12F3EDD82B14890D00EA7972 /* BasicScore.swift in Sources */,
@@ -617,6 +624,7 @@
 				121334DF2AAE3AD800262EAE /* QuestionPresenterTests.swift in Sources */,
 				12F124592A9B79100074C2E3 /* QuestionViewControllerTests.swift in Sources */,
 				12B465B12AAE17930075B6DE /* ResultsPresenterTests.swift in Sources */,
+				1212F5A02B33CE9000787710 /* BasicQuizBuilderTest.swift in Sources */,
 				121E19252A9F608000B87439 /* TableViewHelpers.swift in Sources */,
 				12DCA6172B2445B6000321B9 /* MultipleSelectionStoreTests.swift in Sources */,
 			);
