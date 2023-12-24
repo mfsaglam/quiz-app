@@ -5,8 +5,7 @@
 //  Created by Fatih Sağlam on 10.09.2023.
 //
 
-import Foundation
-import QuizEngine
+import BasicQuizDomain
 
 struct QuestionPresenter {
     let questions: [Question<String>]

@@ -5,8 +5,6 @@
 //  Created by Fatih Sağlam on 21.12.2023.
 //
 
-import QuizEngine
-
 public struct BasicQuiz {
     public let questions: [Question<String>]
     public let options: [Question<String>: [String]]
