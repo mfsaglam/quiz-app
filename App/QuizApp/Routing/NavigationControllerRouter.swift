@@ -7,6 +7,7 @@
 
 import UIKit
 import QuizEngine
+import BasicQuizDomain
 
 final class NavigationControllerRouter: QuizDelegate {
     private let navigationController: UINavigationController
@@ -17,7 +18,7 @@ final class NavigationControllerRouter: QuizDelegate {
         self.factory = factory
     }
     
-    func answer(for question: QuizEngine.Question<String>, completion: @escaping ([String]) -> Void) {
+    func answer(for question: BasicQuizDomain.Question<String>, completion: @escaping ([String]) -> Void) {
         switch question {
         case .singleAnswer:
             show(factory.questionViewController(for: question, answerCallback: completion))
@@ -33,7 +34,7 @@ final class NavigationControllerRouter: QuizDelegate {
         }
     }
     
-    func didCompleteQuiz(withAnswers answers: [(question: QuizEngine.Question<String>, answer: [String])]) {
+    func didCompleteQuiz(withAnswers answers: [(question: BasicQuizDomain.Question<String>, answer: [String])]) {
         show(factory.resultsViewController(for: answers))
     }
     
