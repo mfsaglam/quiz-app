@@ -27,7 +27,6 @@
 		1235B16C2B2AAC3A00F515D6 /* DemoQuizData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1235B16B2B2AAC3A00F515D6 /* DemoQuizData.swift */; };
 		1235B16E2B2AAC7200F515D6 /* QuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1235B16D2B2AAC7200F515D6 /* QuizApp.swift */; };
 		124615F82AA251F900AEC114 /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124615F72AA251F900AEC114 /* QuizEngine.framework */; };
-		124615F92AA251F900AEC114 /* QuizEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 124615F72AA251F900AEC114 /* QuizEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		124615FC2AA252F400AEC114 /* NavigationControllerRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124615FB2AA252F400AEC114 /* NavigationControllerRouterTests.swift */; };
 		124615FE2AA3492700AEC114 /* NavigationControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124615FD2AA3492700AEC114 /* NavigationControllerRouter.swift */; };
 		12B465AB2AADEDB20075B6DE /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B465AA2AADEDB20075B6DE /* ViewControllerFactory.swift */; };
@@ -63,20 +62,6 @@
 			remoteInfo = QuizApp;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		124615FA2AA251F900AEC114 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				124615F92AA251F900AEC114 /* QuizEngine.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1212F59F2B33CE9000787710 /* BasicQuizBuilderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicQuizBuilderTest.swift; sourceTree = "<group>"; };
@@ -487,7 +472,6 @@
 				12F124212A9B77670074C2E3 /* Sources */,
 				12F124222A9B77670074C2E3 /* Frameworks */,
 				12F124232A9B77670074C2E3 /* Resources */,
-				124615FA2AA251F900AEC114 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
