@@ -14,4 +14,5 @@ You'll learn how to build and maintain a sustainable development process by payi
 
 Subscribe now to our [YouTube channel](https://www.youtube.com/channel/UCjFr010oOpmlzZNw79f-1fA?sub_confirmation=1) and catch new episodes.
 
+<p><img src="https://github.com/mfsaglam/quiz-app/blob/main/diagrams/QuizApp.drawio.png?raw=true" alt="Professional iOS Engineering Series"></p>
 <p><img src="https://github.com/mfsaglam/quiz-app/blob/main/diagrams/Abstract%20factory.jpeg?raw=true" alt="Professional iOS Engineering Series"></p>
