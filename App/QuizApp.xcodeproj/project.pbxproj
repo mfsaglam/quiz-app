@@ -471,7 +471,6 @@
 		12F124272A9B77670074C2E3 /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
-				12F3EDD62B1488F900EA7972 /* Scoring */,
 				12E179B72AEE8F22001691A5 /* Routing */,
 				12E179B42AEE8E7E001691A5 /* Presentation */,
 				12E179AE2AEE8D5D001691A5 /* UI */,
@@ -484,7 +483,6 @@
 		12F1243E2A9B77670074C2E3 /* QuizAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				12F3EDD32B14888E00EA7972 /* Scoring */,
 				12E179C32AEE915A001691A5 /* Routing */,
 				12E179BD2AEE9029001691A5 /* Presentation */,
 				12E179B92AEE8F80001691A5 /* UI */,
@@ -500,21 +498,6 @@
 				12F1244B2A9B77670074C2E3 /* QuizAppUITestsLaunchTests.swift */,
 			);
 			path = QuizAppUITests;
-			sourceTree = "<group>";
-		};
-		12F3EDD32B14888E00EA7972 /* Scoring */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Scoring;
-			path = QuizAppTests/Scoring;
-			sourceTree = SOURCE_ROOT;
-		};
-		12F3EDD62B1488F900EA7972 /* Scoring */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Scoring;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
